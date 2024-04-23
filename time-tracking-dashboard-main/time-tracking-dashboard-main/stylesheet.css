@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+@import "themes.css";
+
+body {
+    font-family: "Dosis";
+    letter-spacing: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    background-color: var(--primary);
+    color: var(--primary_text);
+    padding: 40px 100px;
+}
+
+/* Header */
+header {
+    grid-row: span 2;
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+header > section:first-child {
+    background-color: var(--tertiary);
+    border-radius: 20px;
+    padding: 100px 40px;
+}
+
+header > section:last-child {
+    color: var(--secondary_text);
+}
+
+header img {
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+header h1 {
+    font-size: medium;
+    color: var(--secondary_text);
+}
+
+header h1 span {
+    display: block;
+    font-size: xxx-large;
+    color: var(--primary_text);
+}
+
+header section ol {
+    list-style: none;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* Activities */
+.activity {
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+.card {
+    background-color: var(--secondary);
+    border-radius: 18px;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card img {
+    justify-self: end;
+}
+
+.card p {
+    grid-column: span 2;
+    margin: 0.2em 0;
+}
+
+.card > p:nth-child(3) {
+    font-size: xxx-large;
+}
+
+.card > p:nth-child(4) {
+    color: var(--secondary_text);
+}
+
+/* Work */
+.activity:nth-child(2) {
+    background: url("images/icon-work.svg") #ff8b64 no-repeat scroll 95% -10px;
+}
+
+.activity:nth-child(3) {
+    background: url("images/icon-play.svg") #56c2e6 no-repeat scroll 95% -10px;
+}
+
+.activity:nth-child(4) {
+    background: url("images/icon-study.svg") #ff5e7d no-repeat scroll 95% -10px;
+}
+
+.activity:nth-child(5) {
+    background: url("images/icon-exercise.svg") #4bcf83 no-repeat scroll 95% 0;
+}
+
+.activity:nth-child(6) {
+    background: url("images/icon-social.svg") #7235d1 no-repeat scroll 95% -10px;
+}
+
+.activity:nth-child(7) {
+    background: url("images/icon-self-care.svg") #f1c75b no-repeat scroll 95% -10px;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

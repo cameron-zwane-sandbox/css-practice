@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'inter';
+    src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+body {
+    font-family: inter, sans-serif;
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+}
+
+article {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+article h1 {
+    margin-bottom: 0;
+}
+
+article img {
+    border-radius: 50%;
+    width: 30%;
+}
+
+article p, q {
+    font-size: small;
+}
+
+article p {
+    color: #caec44;
+    padding-bottom: 10px;
+}
+
+article button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+article button:hover {
+    background-color: #caec44;
+    color: #333333;
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        padding: 5% 35%;
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    body {
+        padding: 5% 20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

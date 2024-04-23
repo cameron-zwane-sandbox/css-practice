@@ -1,0 +1,17 @@
+:root {
+    --primary_dark: #0d1323;
+    --secondary_dark: #1d204b;
+    --tertiary_dark: #5746ea;
+
+    --primary_text_dark: white;
+    --secondary_text_dark: #abadc5;
+}
+
+.dark-theme {
+    --primary: var(--primary_dark);
+    --secondary: var(--secondary_dark);
+    --tertiary: var(--tertiary_dark);
+
+    --primary_text: var(--primary_text_dark);
+    --secondary_text: var(--secondary_text_dark);
+}
